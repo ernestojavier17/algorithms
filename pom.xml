@@ -11,6 +11,7 @@
     <modules>
         <module>algorithmic-toolbox</module>
         <module>hacker-earth</module>
+        <module>hacker-rank</module>
     </modules>
 
     <!-- ================================================================== -->
