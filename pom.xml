@@ -12,6 +12,7 @@
         <module>algorithmic-toolbox</module>
         <module>hacker-earth</module>
         <module>hacker-rank</module>
+        <module>careercup</module>
     </modules>
 
     <!-- ================================================================== -->
