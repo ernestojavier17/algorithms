@@ -10,8 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>algorithmic-toolbox</module>
-        <module>hacker-earth</module>
-        <module>hacker-rank</module>
+        <module>hearth</module>
+        <module>hrank</module>
         <module>careercup</module>
     </modules>
 
@@ -44,8 +44,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
