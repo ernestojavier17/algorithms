@@ -16,6 +16,7 @@
  */
 package warmup;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
@@ -41,7 +42,7 @@ public class DiagonalDifference {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int a[][] = new int[n][n];
         int d1 = 0;
@@ -50,7 +51,13 @@ public class DiagonalDifference {
             for(int a_j=0; a_j < n; a_j++){
                 a[a_i][a_j] = in.nextInt();
             }
-        }
-        System.out.println();
+        }*/
+
+        BigInteger a = new BigInteger("3141592653589793238462643383279502884197169399375105820974944592");
+        BigInteger b = new BigInteger("2718281828459045235360287471352662497757247093699959574966967627");
+
+        BigInteger r = a.multiply(b);
+
+        System.out.println(r);
     }
 }
