@@ -53,4 +53,14 @@ public class PalindromeTest {
     public void isPalindromeR_TrueOddLongWord() {
         Assert.assertTrue(palindrome.isPalindromeR("rootoor".toCharArray(), 0));
     }
+
+    @Test
+    public void indexPalindrome_WordIsPalindrome() {
+        Assert.assertEquals(-1, palindrome.palindromeIndex("aaa".toCharArray()));
+    }
+
+    @Test
+    public void indexPalindrome_WordIsNotPalindrome() {
+        Assert.assertEquals(3, palindrome.palindromeIndex("aaab".toCharArray()));
+    }
 }
