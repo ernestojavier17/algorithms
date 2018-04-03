@@ -28,31 +28,33 @@ public class PalindromeTest {
         Assert.assertFalse(palindrome.isPalindrome("motor"));
     }
 
+    /**** Recursive ***/
 
     @Test
     public void isPalindromeR_TrueOddWord() {
-        Assert.assertTrue(palindrome.isPalindromeR("rotor".toCharArray(), 0));
+        char[] w = "rotor".toCharArray();
+        Assert.assertTrue(palindrome.isPalindromeR(w, 0, w.length - 1));
     }
 
     @Test
     public void isPalindromeR_TrueEvenWord() {
-        Assert.assertTrue(palindrome.isPalindromeR("redder".toCharArray(), 0));
+        char[] w = "redder".toCharArray();
+        Assert.assertTrue(palindrome.isPalindromeR(w, 0, w.length - 1));
     }
 
     @Test
     public void isPalindromeR_False() {
-        Assert.assertFalse(palindrome.isPalindromeR("motor".toCharArray(), 0));
+        char[] w = "motor".toCharArray();
+        Assert.assertFalse(palindrome.isPalindromeR(w, 0, w.length - 1));
     }
 
     @Test
-    public void isPalindromeR_TrueOneLetter() {
-        Assert.assertTrue(palindrome.isPalindromeR("m".toCharArray(), 0));
+    public void isPalindromeR_False_02() {
+        char[] w = "ABCBDEFDBCBA".toCharArray();
+        Assert.assertFalse(palindrome.isPalindromeR(w, 0, w.length - 1));
     }
 
-    @Test
-    public void isPalindromeR_TrueOddLongWord() {
-        Assert.assertTrue(palindrome.isPalindromeR("rootoor".toCharArray(), 0));
-    }
+    /**** Index ***/
 
     @Test
     public void indexPalindrome_WordIsPalindrome() {
