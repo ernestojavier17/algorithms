@@ -13,6 +13,7 @@
         <module>hearth</module>
         <module>hrank</module>
         <module>careercup</module>
+        <module>fundamentals</module>
     </modules>
 
     <!-- ================================================================== -->
